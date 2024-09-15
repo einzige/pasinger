@@ -84,11 +84,11 @@ func main() {
                 {{with index $.CellMap $y $x}}
                     <td class="{{join .Classes " "}}">
                         {{if eq .Type "destination"}}
-                        <div class="destination">
+                        <div class="destination {{if .Highlighted}}is-highlighted{{end}}">
                             <div class="destination-text">{{.Text}}</div>
                             <div class="destination-time">
-                                <div class="destination-departure">Departure: --:--</div>
-                                <div class="destination-arrival">Arrival: --:--</div>
+                                <div class="destination-departure">--:--</div>
+                                <div class="destination-arrival">--:--</div>
                             </div>
                         </div>
                         {{else}}
