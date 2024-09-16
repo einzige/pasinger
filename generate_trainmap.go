@@ -167,6 +167,8 @@ func main() {
             display: inline-block;
             padding: .2rem .5rem;
             font-size: 1.3rem;
+            border-radius: 0 20px 0 0;
+            padding-right: 2rem;
         }
 
         .destination-time {
