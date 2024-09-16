@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 	"strings"
+	"time"
 )
 
 type Cell struct {
@@ -41,6 +42,9 @@ func main() {
 	}
 	defer outputFile.Close()
 
+	// Define the current time as a single value
+	currentTime := time.Now().Format("15:04:05")
+
 	// Define HTML template with embedded CSS
 	htmlTemplate := `
 <!DOCTYPE html>
@@ -52,9 +56,11 @@ func main() {
     <style>
         table {
             border-collapse: collapse;
+	    font-family: Monospace;
             width: 100%;
-            height: 100%;
-	    font-family: Arial;
+            height: 429px;
+            position: relative;
+            z-index: 9999;
         }
         td {
             height: 35px;
@@ -69,14 +75,17 @@ func main() {
         .destination { display: flex; flex-direction: column; justify-content: center; padding-left: .25rem }
         .destination.is-highlighted { padding: 0; margin: 0; display: block }
         .destination-text { font-size: 1rem; }
-        .destination.is-highlighted .destination-text { font-weight: bold; background: black; color: white; display: inline-block; padding: .2rem .5rem; font-size: 1.7rem }
+        .destination.is-highlighted .destination-text { font-weight: bold; background: black; color: white; display: inline-block; padding: .2rem .5rem; font-size: 1.3rem }
         .destination-time { margin-top: 5px; display: flex; align-items: center }
+	.current-time { font-size: .8rem; color: #666; }
         .destination.is-highlighted .destination-time { display: none }
         .destination-departure, .destination-arrival { font-size: .8rem; color: #555 }
+	.align-right .destination { align-items: end; padding-right: .2rem }
 	.destination-arrival { margin-left: .2rem; border: 1px dotted black; color: black; padding: .2rem; border-radius: 5px }
     </style>
 </head>
 <body>
+<div id='root' style="width: 1200px; height: 820px; background: #ddd; overflow: hidden; filter: grayscale(100%)">
     <table>
         {{range $y := .Rows}}
         <tr>
@@ -85,6 +94,9 @@ func main() {
                     <td class="{{join .Classes " "}}">
                         {{if eq .Type "destination"}}
                         <div class="destination {{if .Highlighted}}is-highlighted{{end}}">
+			    {{if .Highlighted}}
+                            <div class="current-time">{{$.CurrentTime}}</div>
+			    {{end}}
                             <div class="destination-text">{{.Text}}</div>
                             <div class="destination-time">
                                 <div class="destination-departure">--:--</div>
@@ -102,6 +114,9 @@ func main() {
         </tr>
         {{end}}
     </table>
+    <img style='height:391px; width=782px; z-index: 0; position: relative; top: -83px; overflow: hidden' height=391 width=782 src="https://www.yr.no/en/content/2-2867714/meteogram.svg" />
+    <img id='loader' style='height:311px; width=418px; z-index: 0; position: absolute; right: 0; bottom: 0; overflow: hidden' height=311 width=418 src="https://picsum.photos/418/391?grayscale" />
+</div>
 </body>
 </html>
 `
@@ -127,9 +142,10 @@ func main() {
 
 	// Define template data
 	type TemplateData struct {
-		CellMap map[int]map[int]Cell
-		Rows    []int
-		Cols    []int
+		CellMap     map[int]map[int]Cell
+		Rows        []int
+		Cols        []int
+		CurrentTime string // Single current time value passed to the template
 	}
 
 	// Prepare data for template rendering
@@ -143,9 +159,10 @@ func main() {
 	}
 
 	data := TemplateData{
-		CellMap: cellMap,
-		Rows:    rows,
-		Cols:    cols,
+		CellMap:     cellMap,
+		Rows:        rows,
+		Cols:        cols,
+		CurrentTime: currentTime, // Pass current time
 	}
 
 	// Parse and execute the template

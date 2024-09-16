@@ -53,9 +53,9 @@ func main() {
 		// Navigate to the locally served HTML page
 		chromedp.Navigate("http://localhost:8080"),
 		// Wait until the table is fully loaded
-		chromedp.WaitVisible(`table`, chromedp.ByQuery),
+		chromedp.WaitVisible(`#loader`, chromedp.ByQuery),
 		// Capture the table element as a screenshot
-		chromedp.Screenshot(`table`, &buf, chromedp.ByQuery),
+		chromedp.Screenshot(`#root`, &buf, chromedp.ByQuery),
 	})
 
 	if err != nil {

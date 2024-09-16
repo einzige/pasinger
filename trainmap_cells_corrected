@@ -940,8 +940,8 @@
     {
         "x": 8,
         "y": 4,
-        "type": "blank",
-        "text": "",
+        "type": "destination",
+        "text": "Chiemsee",
         "highlighted": false,
         "classes": [
             "border-left",

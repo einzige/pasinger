@@ -399,6 +399,7 @@
         "text": "Erding",
         "highlighted": false,
         "classes": [
+	    "align-right",
             "border-left",
             "border-bottom",
             "background-light"
@@ -448,8 +449,8 @@
     {
         "x": 3,
         "y": 4,
-        "type": "blank",
-        "text": "",
+        "type": "destination",
+        "text": "Geltendorf",
         "highlighted": false,
         "classes": [
             "border-bottom",
@@ -506,10 +507,11 @@
     {
         "x": 8,
         "y": 4,
-        "type": "blank",
-        "text": "",
+        "type": "destination",
+        "text": "Chiemsee",
         "highlighted": false,
         "classes": [
+	    "align-right",
             "border-left",
             "border-bottom",
             "background-light"
@@ -561,7 +563,7 @@
         "x": 3,
         "y": 5,
         "type": "destination",
-        "text": "Herrsching",
+        "text": "Steinebach",
         "highlighted": false,
         "classes": [
             "border-left",
@@ -667,10 +669,11 @@
     {
         "x": 3,
         "y": 6,
-        "type": "blank",
-        "text": "",
+        "type": "destination",
+        "text": "Herrsching",
         "highlighted": false,
         "classes": [
+            "border-left",
             "background-light"
         ]
     },
