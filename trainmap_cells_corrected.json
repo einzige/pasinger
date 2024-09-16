@@ -305,6 +305,7 @@
         "text": "Passau",
         "highlighted": false,
         "classes": [
+	    "align-right",
             "border-bottom",
             "background-dark"
         ]
@@ -428,10 +429,11 @@
     {
         "x": 1,
         "y": 4,
-        "type": "blank",
-        "text": "",
+        "type": "destination",
+        "text": "Memmingen",
         "highlighted": false,
         "classes": [
+	    "border-bottom",
             "background-light"
         ]
     },
@@ -484,9 +486,10 @@
         "x": 6,
         "y": 4,
         "type": "blank",
-        "text": "",
+        "text": "Laim",
         "highlighted": false,
         "classes": [
+	    "note",
             "border-left",
             "border-bottom",
             "background-white"
@@ -525,6 +528,7 @@
         "highlighted": false,
         "classes": [
             "border-bottom",
+	    "align-right",
             "background-dark"
         ]
     },
@@ -680,8 +684,8 @@
     {
         "x": 4,
         "y": 6,
-        "type": "destination",
-        "text": "Tutzing",
+        "type": "blank",
+        "text": "",
         "highlighted": false,
         "classes": [
             "border-left",
@@ -788,12 +792,13 @@
         "x": 4,
         "y": 7,
         "type": "blank",
-        "text": "",
+        "type": "destination",
+        "text": "Tutzing",
         "highlighted": false,
         "classes": [
             "border-left",
             "border-bottom",
-            "background-light"
+            "background-white"
         ]
     },
     {
@@ -885,18 +890,19 @@
     {
         "x": 3,
         "y": 8,
-        "type": "blank",
-        "text": "",
+        "type": "destination",
+        "text": "Schongau",
         "highlighted": false,
         "classes": [
+	    "border-bottom",
             "background-light"
         ]
     },
     {
         "x": 4,
         "y": 8,
-        "type": "blank",
-        "text": "",
+        "type": "destination",
+        "text": "Weilheim",
         "highlighted": false,
         "classes": [
             "border-left",

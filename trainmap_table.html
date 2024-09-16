@@ -68,12 +68,38 @@
             border-bottom: 2px solid black;
         }
 
+        .note {
+          font-size: .8rem;
+          color: #aaa;
+        }
+
          
         .destination {
+            position: relative;
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             justify-content: center;
             padding-left: .25rem;
+        }
+
+        .destination::after {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background-color: black;
+            position: absolute;
+            bottom: -4px;     
+            left: -4px;   
+        }
+
+        .align-right .destination {
+            align-items: flex-end;
+            padding-right: .2rem;
+        }
+
+        .align-right .destination::after {
+            left: inherit;
+            right: -4px;
         }
 
         .destination.is-highlighted {
@@ -114,11 +140,6 @@
         .destination-arrival {
             font-size: .8rem;
             color: #555;
-        }
-
-        .align-right .destination {
-            align-items: flex-end;
-            padding-right: .2rem;
         }
 
         .destination-arrival {
@@ -448,7 +469,7 @@
                 
             
                 
-                    <td class="border-bottom background-dark">
+                    <td class="align-right border-bottom background-dark">
                         
                         <div class="destination ">
                             
@@ -573,9 +594,16 @@
                 
             
                 
-                    <td class="background-light">
+                    <td class="border-bottom background-light">
                         
-                        
+                        <div class="destination ">
+                            
+                            <div class="destination-text">Memmingen</div>
+                            <div class="destination-time">
+                                <div class="destination-departure">--:--</div>
+                                <div class="destination-arrival">--:--</div>
+                            </div>
+                        </div>
                         
                     </td>
                 
@@ -623,7 +651,7 @@
                         
                         <div class="destination is-highlighted">
                             
-                            <div class="current-time">17:47:26</div>
+                            <div class="current-time">19:10:34</div>
                             
                             <div class="destination-text">Pasing</div>
                             <div class="destination-time">
@@ -636,9 +664,9 @@
                 
             
                 
-                    <td class="border-left border-bottom background-white">
+                    <td class="note border-left border-bottom background-white">
                         
-                        
+                        Laim
                         
                     </td>
                 
@@ -674,7 +702,7 @@
                 
             
                 
-                    <td class="border-bottom background-dark">
+                    <td class="border-bottom align-right background-dark">
                         
                         <div class="destination ">
                             
@@ -832,14 +860,7 @@
                 
                     <td class="border-left background-white">
                         
-                        <div class="destination ">
-                            
-                            <div class="destination-text">Tutzing</div>
-                            <div class="destination-time">
-                                <div class="destination-departure">--:--</div>
-                                <div class="destination-arrival">--:--</div>
-                            </div>
-                        </div>
+                        
                         
                     </td>
                 
@@ -942,9 +963,16 @@
                 
             
                 
-                    <td class="border-left border-bottom background-light">
+                    <td class="border-left border-bottom background-white">
                         
-                        
+                        <div class="destination ">
+                            
+                            <div class="destination-text">Tutzing</div>
+                            <div class="destination-time">
+                                <div class="destination-departure">--:--</div>
+                                <div class="destination-arrival">--:--</div>
+                            </div>
+                        </div>
                         
                     </td>
                 
@@ -1025,9 +1053,16 @@
                 
             
                 
-                    <td class="background-light">
+                    <td class="border-bottom background-light">
                         
-                        
+                        <div class="destination ">
+                            
+                            <div class="destination-text">Schongau</div>
+                            <div class="destination-time">
+                                <div class="destination-departure">--:--</div>
+                                <div class="destination-arrival">--:--</div>
+                            </div>
+                        </div>
                         
                     </td>
                 
@@ -1035,7 +1070,14 @@
                 
                     <td class="border-left background-light">
                         
-                        
+                        <div class="destination ">
+                            
+                            <div class="destination-text">Weilheim</div>
+                            <div class="destination-time">
+                                <div class="destination-departure">--:--</div>
+                                <div class="destination-arrival">--:--</div>
+                            </div>
+                        </div>
                         
                     </td>
                 

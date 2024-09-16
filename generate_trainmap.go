@@ -116,12 +116,38 @@ func main() {
             border-bottom: 2px solid black;
         }
 
+        .note {
+          font-size: .8rem;
+          color: #aaa;
+        }
+
         /* Destination styling */
         .destination {
+            position: relative;
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             justify-content: center;
             padding-left: .25rem;
+        }
+
+        .destination::after {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background-color: black;
+            position: absolute;
+            bottom: -4px;    /* Place at the top corner */
+            left: -4px;  /* Place at the right corner */
+        }
+
+        .align-right .destination {
+            align-items: flex-end;
+            padding-right: .2rem;
+        }
+
+        .align-right .destination::after {
+            left: inherit;
+            right: -4px;
         }
 
         .destination.is-highlighted {
@@ -162,11 +188,6 @@ func main() {
         .destination-arrival {
             font-size: .8rem;
             color: #555;
-        }
-
-        .align-right .destination {
-            align-items: flex-end;
-            padding-right: .2rem;
         }
 
         .destination-arrival {
