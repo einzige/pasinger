@@ -45,7 +45,7 @@ func main() {
 	// Define the current time as a single value
 	currentTime := time.Now().Format("15:04:05")
 
-	// Define HTML template with embedded CSS
+	// Define HTML template with refactored CSS
 	htmlTemplate := `
 <!DOCTYPE html>
 <html lang="en">
@@ -54,38 +54,139 @@ func main() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Map</title>
     <style>
+        body {
+            font-family: Monospace;
+            background-color: #ddd;
+            overflow: hidden;
+            filter: grayscale(100%);
+        }
+
+        #root {
+            width: 1200px;
+            height: 820px;
+	    position: relative;
+        }
+
         table {
             border-collapse: collapse;
-	    font-family: Monospace;
             width: 100%;
             height: 429px;
             position: relative;
             z-index: 9999;
         }
+
         td {
             height: 35px;
             text-align: left;
             vertical-align: bottom;
         }
-        .background-white { background-color: white; }
-        .background-light { background-color: #eee; }
-        .background-dark { background-color: #ddd; }
-        .border-left { border-left: 2px solid black; }
-        .border-bottom { border-bottom: 2px solid black; }
-        .destination { display: flex; flex-direction: column; justify-content: center; padding-left: .25rem }
-        .destination.is-highlighted { padding: 0; margin: 0; display: block }
-        .destination-text { font-size: 1rem; }
-        .destination.is-highlighted .destination-text { font-weight: bold; background: black; color: white; display: inline-block; padding: .2rem .5rem; font-size: 1.3rem }
-        .destination-time { margin-top: 5px; display: flex; align-items: center }
-	.current-time { font-size: .8rem; color: #666; }
-        .destination.is-highlighted .destination-time { display: none }
-        .destination-departure, .destination-arrival { font-size: .8rem; color: #555 }
-	.align-right .destination { align-items: end; padding-right: .2rem }
-	.destination-arrival { margin-left: .2rem; border: 1px dotted black; color: black; padding: .2rem; border-radius: 5px }
+
+        /* Cell background colors */
+        .background-white {
+            background-color: white;
+        }
+
+        .background-light {
+            background-color: #eee;
+        }
+
+        .background-dark {
+            background-color: #ddd;
+        }
+
+        /* Borders */
+        .border-left {
+            border-left: 2px solid black;
+        }
+
+        .border-bottom {
+            border-bottom: 2px solid black;
+        }
+
+        /* Destination styling */
+        .destination {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: .25rem;
+        }
+
+        .destination.is-highlighted {
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+
+        .destination-text {
+            font-size: 1rem;
+        }
+
+        .destination.is-highlighted .destination-text {
+            font-weight: bold;
+            background: black;
+            color: white;
+            display: inline-block;
+            padding: .2rem .5rem;
+            font-size: 1.3rem;
+        }
+
+        .destination-time {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .current-time {
+            font-size: .8rem;
+            color: #666;
+        }
+
+        .destination.is-highlighted .destination-time {
+            display: none;
+        }
+
+        .destination-departure,
+        .destination-arrival {
+            font-size: .8rem;
+            color: #555;
+        }
+
+        .align-right .destination {
+            align-items: flex-end;
+            padding-right: .2rem;
+        }
+
+        .destination-arrival {
+            margin-left: .2rem;
+            border: 1px dotted black;
+            color: black;
+            padding: .2rem;
+            border-radius: 5px;
+        }
+
+        /* Images */
+        .weather-img {
+            height: 391px;
+            width: 782px;
+            z-index: 0;
+            position: relative;
+            top: -83px;
+            overflow: hidden;
+        }
+
+        .loader-img {
+            height: 311px;
+            width: 418px;
+            z-index: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
-<div id='root' style="width: 1200px; height: 820px; background: #ddd; overflow: hidden; filter: grayscale(100%)">
+<div id="root">
     <table>
         {{range $y := .Rows}}
         <tr>
@@ -94,9 +195,9 @@ func main() {
                     <td class="{{join .Classes " "}}">
                         {{if eq .Type "destination"}}
                         <div class="destination {{if .Highlighted}}is-highlighted{{end}}">
-			    {{if .Highlighted}}
+                            {{if .Highlighted}}
                             <div class="current-time">{{$.CurrentTime}}</div>
-			    {{end}}
+                            {{end}}
                             <div class="destination-text">{{.Text}}</div>
                             <div class="destination-time">
                                 <div class="destination-departure">--:--</div>
@@ -114,8 +215,8 @@ func main() {
         </tr>
         {{end}}
     </table>
-    <img style='height:391px; width=782px; z-index: 0; position: relative; top: -83px; overflow: hidden' height=391 width=782 src="https://www.yr.no/en/content/2-2867714/meteogram.svg" />
-    <img id='loader' style='height:311px; width=418px; z-index: 0; position: absolute; right: 0; bottom: 0; overflow: hidden' height=311 width=418 src="https://picsum.photos/418/391?grayscale" />
+    <img class="weather-img" src="https://www.yr.no/en/content/2-2867714/meteogram.svg" />
+    <img id="loader" class="loader-img" src="https://picsum.photos/418/391?grayscale" />
 </div>
 </body>
 </html>
