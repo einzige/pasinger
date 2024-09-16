@@ -685,9 +685,10 @@
         "x": 4,
         "y": 6,
         "type": "blank",
-        "text": "",
+	"text": "Pöcking",
         "highlighted": false,
         "classes": [
+	    "note",
             "border-left",
             "background-white"
         ]
@@ -880,9 +881,10 @@
         "x": 2,
         "y": 8,
         "type": "blank",
-        "text": "",
+        "text": "Biessenhofen",
         "highlighted": false,
         "classes": [
+	    "note",
             "border-left",
             "background-light"
         ]
