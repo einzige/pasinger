@@ -1,0 +1,3 @@
+[submodule "shit/Inkplate-Arduino-library"]
+	path = shit/Inkplate-Arduino-library
+	url = https://github.com/SolderedElectronics/Inkplate-Arduino-library.git

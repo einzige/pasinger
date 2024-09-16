@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"net/http"
+	"path/filepath"
 	"time"
 
 	"github.com/chromedp/chromedp"
@@ -16,26 +16,11 @@ func main() {
 	htmlFile := "trainmap_table.html"
 	outputPng := "trainmap_table_only.png"
 
-	// Read the HTML content from the file
-	htmlContent, err := ioutil.ReadFile(htmlFile)
+	// Read the HTML content from the file (optional, for validation)
+	_, err := ioutil.ReadFile(htmlFile)
 	if err != nil {
 		log.Fatalf("Failed to read HTML file: %v", err)
 	}
-
-	// Start a local HTTP server to serve the HTML content
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "text/html")
-		w.Write(htmlContent)
-	})
-
-	// Run the server in the background
-	server := &http.Server{Addr: ":8080"}
-	go func() {
-		if err := server.ListenAndServe(); err != nil {
-			log.Printf("HTTP server stopped: %v", err)
-		}
-	}()
-	defer server.Close()
 
 	// Create a new context for chromedp
 	ctx, cancel := chromedp.NewContext(context.Background())
@@ -48,13 +33,27 @@ func main() {
 	// Define the variable to hold the screenshot data
 	var buf []byte
 
-	// Run chromedp tasks to navigate to the local server and capture only the table element
+	// Convert the relative file path to an absolute path
+	absPath, err := filepath.Abs(htmlFile)
+	if err != nil {
+		log.Fatalf("Failed to get absolute path of the HTML file: %v", err)
+	}
+
+	// Run chromedp tasks to open the local HTML file directly and capture the screenshot
 	err = chromedp.Run(ctx, chromedp.Tasks{
-		// Navigate to the locally served HTML page
-		chromedp.Navigate("http://localhost:8080"),
-		// Wait until the table is fully loaded
+		// Set the viewport to the desired size (1200x820)
+		// chromedp.EmulateViewport(1200, 820),
+
+		// Navigate to the local HTML file using the file:// protocol
+		chromedp.Navigate("file://" + absPath),
+
+		// Wait until the #loader element is visible (to ensure the page is fully loaded)
 		chromedp.WaitVisible(`#loader`, chromedp.ByQuery),
-		// Capture the table element as a screenshot
+
+		// Apply grayscale filter using JavaScript
+		chromedp.Evaluate(`document.body.style.filter = 'grayscale(100%)';`, nil),
+
+		// Capture the #root element as a screenshot
 		chromedp.Screenshot(`#root`, &buf, chromedp.ByQuery),
 	})
 
