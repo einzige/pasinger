@@ -60,7 +60,7 @@ func main() {
             font-family: Monospace;
             background-color: #ddd;
             overflow: hidden;
-            filter: grayscale(100%);
+            filter: brightness(0.7) contrast(3) grayscale(1);
         }
 
         #root {
@@ -100,13 +100,13 @@ func main() {
         }
 
         .background-light {
-            background-color: #ccc;
-            border-color: #ccc;
+            background-color: #dfdfdf;
+            border-color: #dfdfdf;
         }
 
         .background-dark {
-            background-color: #aaa;
-            border-color: #aaa;
+            background-color: #cfcfcf;
+            border-color: #cfcfcf;
         }
 
         /* Borders */
