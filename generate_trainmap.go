@@ -15,13 +15,15 @@ type Cell struct {
 	Y           int      `json:"y"`
 	Type        string   `json:"type"`
 	Text        string   `json:"text"`
+	Name        string   `json:"name"`
+	Eva         string   `json:"eva"`
 	Highlighted bool     `json:"highlighted"`
 	Classes     []string `json:"classes"`
 }
 
 func main() {
 	// Load JSON file
-	filePath := "trainmap_cells_corrected.json" // Your JSON file path
+	filePath := "trainmap_with_eva.json" // Your JSON file path
 	jsonFile, err := os.Open(filePath)
 	if err != nil {
 		fmt.Println(err)
@@ -98,13 +100,13 @@ func main() {
         }
 
         .background-light {
-            background-color: #eee;
-            border-color: #eee;
+            background-color: #ccc;
+            border-color: #ccc;
         }
 
         .background-dark {
-            background-color: #ddd;
-            border-color: #ddd;
+            background-color: #aaa;
+            border-color: #aaa;
         }
 
         /* Borders */
@@ -239,7 +241,7 @@ func main() {
                 {{with index $.CellMap $y $x}}
                     <td class="{{join .Classes " "}}">
                         {{if eq .Type "destination"}}
-                        <div class="destination {{if .Highlighted}}is-highlighted{{end}}">
+                        <div class="destination {{if .Highlighted}}is-highlighted{{end}}" data-name="{{if .Name}}{{.Name}}{{else}}{{.Text}}{{end}}" data-eva="{{ .Eva }}">
                             {{if .Highlighted}}
                             <div class="current-time">{{$.CurrentTime}}</div>
                             {{end}}

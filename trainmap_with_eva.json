@@ -73,7 +73,7 @@
     "x": 7,
     "y": 0,
     "type": "destination",
-    "text": "Nuremberg",
+    "text": "Nürnberg",
     "name": "Nürnberg Hbf",
     "eva": "8000284",
     "highlighted": false,
@@ -234,7 +234,7 @@
     "y": 2,
     "type": "destination",
     "text": "Augsburg",
-    "text": "Augsburg Hbf",
+    "name": "Augsburg Hbf",
     "eva": "8000013",
     "highlighted": false,
     "classes": [
@@ -389,7 +389,7 @@
     "y": 3,
     "type": "destination",
     "text": "Dachau",
-    "text": "Dachau Bahnhof",
+    "name": "Dachau Bahnhof",
     "eva": "8001354",
     "highlighted": false,
     "classes": [
@@ -978,7 +978,7 @@
     "y": 8,
     "type": "destination",
     "text": "Tegernsee",
-    "name": "Gmund (Tegernsee)"
+    "name": "Gmund (Tegernsee)",
     "eva": "8007631",
     "highlighted": false,
     "classes": [

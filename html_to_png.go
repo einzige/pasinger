@@ -1,6 +1,8 @@
 package main
 
 import (
+  "bytes"
+  "os"
 	"context"
 	"fmt"
 	"io/ioutil"
@@ -8,7 +10,11 @@ import (
 	"path/filepath"
 	"time"
 
+  "image"
+	"image/png"
+
 	"github.com/chromedp/chromedp"
+  "github.com/nfnt/resize"
 )
 
 func main() {
@@ -57,14 +63,37 @@ func main() {
 		chromedp.Screenshot(`#root`, &buf, chromedp.ByQuery),
 	})
 
+  // Decode the PNG image from the buffer
+	img, _, err := image.Decode(bytes.NewReader(buf))
 	if err != nil {
-		log.Fatalf("Failed to capture table screenshot: %v", err)
+		log.Fatalf("Failed to decode screenshot: %v", err)
 	}
 
-	// Write the screenshot to a PNG file
-	err = ioutil.WriteFile(outputPng, buf, 0644)
+	// Get the original width and height of the image
+	origBounds := img.Bounds()
+	origWidth := origBounds.Dx()
+
+	// If the width is greater than 1200px, resize the image
+	var resizedImg image.Image
+	if origWidth > 1200 {
+		// Resize to width 1200px while maintaining the aspect ratio
+		resizedImg = resize.Resize(1200, 0, img, resize.Lanczos3) // 0 height keeps the aspect ratio
+	} else {
+		// No resize needed, use the original image
+		resizedImg = img
+	}
+
+	// Write the resized image back to a PNG file
+	outFile, err := os.Create(outputPng)
 	if err != nil {
-		log.Fatalf("Failed to write PNG file: %v", err)
+		log.Fatalf("Failed to create output file: %v", err)
+	}
+	defer outFile.Close()
+
+	// Encode the resized image to PNG and save
+	err = png.Encode(outFile, resizedImg)
+	if err != nil {
+		log.Fatalf("Failed to encode PNG file: %v", err)
 	}
 
 	fmt.Printf("Table screenshot saved as %s\n", outputPng)
