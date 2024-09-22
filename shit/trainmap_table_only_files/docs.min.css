@@ -1,0 +1,106 @@
+/*!
+ * Aküfi (https://akue.fi)
+ * Copyright 2018-2019 
+ * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ * For details, see https://creativecommons.org/licenses/by/3.0/.
+ */
+body,.ze-content{background:#12263F;color:#fff}
+a{color:#4da3ff}
+a:hover,a.badge:hover{color:#eaf4ff}
+
+#skippy{display:block;padding:1em;color:#fff;background-color:transparent;outline:0}#skippy .skiplink-text{padding:.5em;outline:1px dotted}
+
+.ze-navbar{min-height:4rem}
+@media (max-width:991.98px){
+	.ze-navbar{padding-right:.5rem;padding-left:.5rem}
+	.ze-navbar .navbar-nav-scroll{max-width:100%;height:2.5rem;margin-top:.25rem;overflow:hidden;font-size:.875rem}
+	.ze-navbar .navbar-nav-scroll .navbar-nav{padding-bottom:2rem;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+}
+@media (min-width:768px){
+	@supports ((position:-webkit-sticky) or (position:sticky)){
+		.ze-navbar{position:-webkit-sticky;position:sticky;top:0;z-index:1071}
+	}
+}
+.ze-sidebar{-ms-flex-order:0;order:0;/*border-bottom:1px solid #1e3a5c*/}
+@media (min-width:768px){
+	.ze-sidebar{/*border-right:1px solid #1e3a5c;border-top:1px solid #1e3a5c*/}
+	@supports ((position:-webkit-sticky) or (position:sticky)){
+		.ze-sidebar{
+			position:-webkit-sticky;position:sticky;z-index:1000;
+			height:calc(100vh);
+			/*height:calc(100vh - 4rem);top:4rem;*/
+		}
+	}
+}
+@media (min-width:1200px){
+	.ze-sidebar{-ms-flex:0 1 320px;flex:0 1 320px}
+}
+.ze-sidebar{background:#152e4d}
+.ze-search{position:relative;padding:1rem 15px;margin-right:-15px;margin-left:-15px}
+.ze-search .form-control{border-width:0;box-shadow:0 0 0 3px rgba(163,141,110,.25);transition:box-shadow .5s ease-in-out}
+.ze-search .form-control:focus{box-shadow:0 0 0 3px rgba(163,141,110,.75)}
+.ze-search .typeahead{max-width:333px;min-width:225px}
+.ze-links{padding-top:1rem;padding-bottom:1rem;margin-right:-15px;margin-left:-15px;border-top:1px solid #1e3a5c}
+@media (min-width:768px){
+	@supports ((position:-webkit-sticky) or (position:sticky)){
+		.ze-links{max-height:calc(100vh - 9rem);overflow-y:auto}
+	}
+}
+@media (min-width:768px){
+	.ze-links{display:block!important}
+}
+@media (max-width:575.98px){
+	.modal-dialog{margin:0;overflow-y:auto;overflow-x:auto}
+}
+
+.badge{font-family:Lato,Arial,Helvetica,sans-serif;font-weight:normal}
+.badge-ze-danger{background-color:#5c1e3a;color:#a36e84}
+.badge-ze-primary{background-color:#1e3a5c;color:#6e84a3}
+.badge-ze-secondary{background-color:#5c401e;color:#a38d6e}
+.badge-ze-success{background-color:#1e5c40;color:#6ea38d}
+.border-akufi-l{border-left:1px solid #1e3a5c;display:inline-block;padding-left:.5rem}
+.btn-clip{background:transparent;cursor:pointer;color:#6e84a3;font-size:75%;margin:-.25rem 0 0 .5rem;padding:0}
+dt>.btn-clip,dd>.btn-clip{opacity:0;transition:visibility .5s,opacity .5s ease-in-out;visibility:hidden}
+dt:hover>.btn-clip,dd:hover>.btn-clip{opacity:1;visibility:visible}
+.fa-spin.fa-circle-notch{color:#1e3a5c}
+.font-serif{font-family:'Libre Baskerville','Times New Roman',serif}
+.font-sans-serif{font-family:Lato,Arial,Helvetica,sans-serif}
+.header-body{border-bottom:1px solid #1e3a5c;margin-bottom:.5rem;padding-top:1.5rem;padding-bottom:1.5rem;}
+.header-pretitle{color:#6e84a3;font-family:Lato,Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.header-title{}
+.pagination-fixed>li a{margin-right:.25rem;min-width:1.813rem;text-align:center}
+.pagination-fixed>li:last-child a{margin-right:0}
+.text-addr:before{content:"\0043\0068\0072\0069\0073\0074\0069\0061\006e\0020\005a\0065\0069\0073\0065, Pottval & Zeise Media, \004b\0075\0072\0066\00fc\0072\0073\0074\0065\006e\0064\0061\006d\006d\0020\0031\0039\0035\002c\0020\0031\0030\0037\0030\0037\0020\0042\0065\0072\006c\0069\006e\002c\0020"}
+.text-addr-wrap:before{content:"\0043\0068\0072\0069\0073\0074\0069\0061\006e\0020\005a\0065\0069\0073\0065\aPottval & Zeise Media\a\004b\0075\0072\0066\00fc\0072\0073\0074\0065\006e\0064\0061\006d\006d\0020\0031\0039\0035\a\0031\0030\0037\0030\0037\0020\0042\0065\0072\006c\0069\006e";white-space:pre}
+.text-mail:after{content:"\0040\zeise\002e\media"}
+.text-mail:before{content:"akuefi"}
+.text-danger{color:#a36e84!important}
+.text-dark a{color:#007bff}
+.text-dark a:hover{color:#0056b3}
+.text-muted{color:#6e84a3!important}
+.text-secondary{color:#a38d6e!important}
+.text-success{color:#6ea38d!important}
+@media (min-width:768px){
+	.w-lg-50{width:50%}
+	.w-lg-75{width:75%}
+}
+
+.ze-tree{color:#6e84a3;list-style:none;margin:0;padding:0}
+.ze-tree li{line-height:2rem;position:relative}
+.ze-tree li a.active,.ze-tree li a:active,.ze-tree li a:focus,.ze-tree li a:hover{color:#eaf4ff}
+.ze-tree li i[class^="fa-"],
+.ze-tree li i[class*=" fa-"]{color:#1e3a5c}
+.ze-tree li i[class^="fa-"].mr-2,
+.ze-tree li i[class*=" fa-"].mr-2{margin-right:.75rem!important}
+.ze-tree li i.fa-first{padding-left:.5rem}
+.ze-tree ul{list-style:none;margin:0 0 0 1rem;padding:0;position:relative}
+.ze-tree ul:before{border-left:1px solid #1e3a5c;bottom:0;content:"";left:-1px;position:absolute;top:0}
+.ze-tree ul li{padding-left:1.5rem}
+.ze-tree ul li:before{border-top:1px solid #1e3a5c;content:"";height:1px;left:0;position:absolute;
+	top:1rem;/* half the line-height */
+	width:1rem;/* same as indentation */}
+.ze-tree ul li:last-child:before{bottom:0;height:auto;left:-1px;
+	top:1rem;/* half the line-height */}
+.ze-content .ze-tree ul li:last-child:before{background-color:#12263F}
+.ze-sidebar .ze-tree ul li:last-child:before{background-color:#152e4d}
+.ze-tree ul ul{margin-left:.5rem;/* half the indentation */}

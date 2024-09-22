@@ -1,0 +1,1217 @@
+[
+  {
+    "x": 0,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 2,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 3,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 4,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 5,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 6,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 0,
+    "type": "destination",
+    "text": "Nuremberg",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ],
+    "eva": "8000284"
+  },
+  {
+    "x": 8,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 9,
+    "y": 0,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 2,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 3,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 4,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 5,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 6,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 1,
+    "type": "destination",
+    "text": "Regensburg",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ],
+    "eva": "8000309"
+  },
+  {
+    "x": 8,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 9,
+    "y": 1,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 2,
+    "type": "destination",
+    "text": "Ulm",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-dark"
+    ],
+    "eva": "8000320"
+  },
+  {
+    "x": 1,
+    "y": 2,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-light"
+    ]
+  },
+  {
+    "x": 2,
+    "y": 2,
+    "type": "destination",
+    "text": "Augsburg",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-white"
+    ],
+    "eva": "8000010"
+  },
+  {
+    "x": 3,
+    "y": 2,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-white"
+    ]
+  },
+  {
+    "x": 4,
+    "y": 2,
+    "type": "destination",
+    "text": "Mammendorf",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-white"
+    ],
+    "eva": "8004139"
+  },
+  {
+    "x": 5,
+    "y": 2,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-white"
+    ]
+  },
+  {
+    "x": 6,
+    "y": 2,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-white"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 2,
+    "type": "destination",
+    "text": "Ingolstadt",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ],
+    "eva": "8000183"
+  },
+  {
+    "x": 8,
+    "y": 2,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-light"
+    ]
+  },
+  {
+    "x": 9,
+    "y": 2,
+    "type": "destination",
+    "text": "Passau",
+    "highlighted": false,
+    "classes": [
+      "align-right",
+      "border-bottom",
+      "background-dark"
+    ],
+    "eva": "8000295"
+  },
+  {
+    "x": 0,
+    "y": 3,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 3,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 2,
+    "y": 3,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-white"
+    ]
+  },
+  {
+    "x": 3,
+    "y": 3,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-white"
+    ]
+  },
+  {
+    "x": 4,
+    "y": 3,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-white"
+    ]
+  },
+  {
+    "x": 5,
+    "y": 3,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ]
+  },
+  {
+    "x": 6,
+    "y": 3,
+    "type": "destination",
+    "text": "Dahau",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ],
+    "eva": "8000930"
+  },
+  {
+    "x": 7,
+    "y": 3,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ]
+  },
+  {
+    "x": 8,
+    "y": 3,
+    "type": "destination",
+    "text": "Erding",
+    "highlighted": false,
+    "classes": [
+      "align-right",
+      "border-left",
+      "border-bottom",
+      "background-light"
+    ],
+    "eva": "8000176"
+  },
+  {
+    "x": 9,
+    "y": 3,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 4,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 4,
+    "type": "destination",
+    "text": "Memmingen",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-light"
+    ],
+    "eva": "8000251"
+  },
+  {
+    "x": 2,
+    "y": 4,
+    "type": "destination",
+    "text": "Buchloe",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-white"
+    ],
+    "eva": "8000035"
+  },
+  {
+    "x": 3,
+    "y": 4,
+    "type": "destination",
+    "text": "Geltendorf",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-white"
+    ],
+    "eva": "8000103"
+  },
+  {
+    "x": 4,
+    "y": 4,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-white"
+    ]
+  },
+  {
+    "x": 5,
+    "y": 4,
+    "type": "destination",
+    "text": "Pasing",
+    "highlighted": true,
+    "classes": [
+      "border-left",
+      "border-bottom",
+      "background-white"
+    ],
+    "eva": "8004158"
+  },
+  {
+    "x": 6,
+    "y": 4,
+    "type": "blank",
+    "text": "Laim",
+    "highlighted": false,
+    "classes": [
+      "note",
+      "border-left",
+      "border-bottom",
+      "background-white"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 4,
+    "type": "destination",
+    "text": "Munich",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "border-bottom",
+      "background-white"
+    ],
+    "eva": "8000261"
+  },
+  {
+    "x": 8,
+    "y": 4,
+    "type": "destination",
+    "text": "Chiemsee",
+    "highlighted": false,
+    "classes": [
+      "align-right",
+      "border-left",
+      "border-bottom",
+      "background-light"
+    ],
+    "eva": "8000452"
+  },
+  {
+    "x": 9,
+    "y": 4,
+    "type": "destination",
+    "text": "Salzburg",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "align-right",
+      "background-dark"
+    ],
+    "eva": "8000411"
+  },
+  {
+    "x": 0,
+    "y": 5,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 5,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 2,
+    "y": 5,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 3,
+    "y": 5,
+    "type": "destination",
+    "text": "Steinebach",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ],
+    "eva": "8005920"
+  },
+  {
+    "x": 4,
+    "y": 5,
+    "type": "destination",
+    "text": "Starnberg",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ],
+    "eva": "8000415"
+  },
+  {
+    "x": 5,
+    "y": 5,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ]
+  },
+  {
+    "x": 6,
+    "y": 5,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-white"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 5,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ]
+  },
+  {
+    "x": 8,
+    "y": 5,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "border-bottom",
+      "background-light"
+    ]
+  },
+  {
+    "x": 9,
+    "y": 5,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 6,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 6,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 2,
+    "y": 6,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 3,
+    "y": 6,
+    "type": "destination",
+    "text": "Herrsching",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ],
+    "eva": "8000269"
+  },
+  {
+    "x": 4,
+    "y": 6,
+    "type": "blank",
+    "text": "Pöcking",
+    "highlighted": false,
+    "classes": [
+      "note",
+      "border-left",
+      "background-white"
+    ]
+  },
+  {
+    "x": 5,
+    "y": 6,
+    "type": "destination",
+    "text": "Wolfratshausen",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-white"
+    ],
+    "eva": "8006259"
+  },
+  {
+    "x": 6,
+    "y": 6,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-white"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 6,
+    "type": "destination",
+    "text": "Holzkirchen",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "border-bottom",
+      "background-white"
+    ],
+    "eva": "8000281"
+  },
+  {
+    "x": 8,
+    "y": 6,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 9,
+    "y": 6,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 7,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 7,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 2,
+    "y": 7,
+    "type": "destination",
+    "text": "Kaufbeuren",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ],
+    "eva": "8003201"
+  },
+  {
+    "x": 3,
+    "y": 7,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 4,
+    "y": 7,
+    "type": "destination",
+    "text": "Tutzing",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "border-bottom",
+      "background-white"
+    ],
+    "eva": "8000383"
+  },
+  {
+    "x": 5,
+    "y": 7,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 6,
+    "y": 7,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 7,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 8,
+    "y": 7,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 9,
+    "y": 7,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 8,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 8,
+    "type": "destination",
+    "text": "Kempten",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-light"
+    ],
+    "eva": "8000208"
+  },
+  {
+    "x": 2,
+    "y": 8,
+    "type": "blank",
+    "text": "Biessenhofen",
+    "highlighted": false,
+    "classes": [
+      "note",
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 3,
+    "y": 8,
+    "type": "destination",
+    "text": "Schongau",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-light"
+    ],
+    "eva": "8000418"
+  },
+  {
+    "x": 4,
+    "y": 8,
+    "type": "destination",
+    "text": "Weilheim",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ],
+    "eva": "8000264"
+  },
+  {
+    "x": 5,
+    "y": 8,
+    "type": "destination",
+    "text": "Kochel",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ],
+    "eva": "8000299"
+  },
+  {
+    "x": 6,
+    "y": 8,
+    "type": "destination",
+    "text": "Lengries",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ],
+    "eva": "8000374"
+  },
+  {
+    "x": 7,
+    "y": 8,
+    "type": "destination",
+    "text": "Tegernsee",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ],
+    "eva": "8000406"
+  },
+  {
+    "x": 8,
+    "y": 8,
+    "type": "destination",
+    "text": "Schliersee",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ],
+    "eva": "8000380"
+  },
+  {
+    "x": 9,
+    "y": 8,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 9,
+    "type": "destination",
+    "text": "Lindau",
+    "highlighted": false,
+    "classes": [
+      "border-bottom",
+      "background-dark"
+    ],
+    "eva": "8000225"
+  },
+  {
+    "x": 1,
+    "y": 9,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 2,
+    "y": 9,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 3,
+    "y": 9,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 4,
+    "y": 9,
+    "type": "destination",
+    "text": "Garmisch",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "border-bottom",
+      "background-light"
+    ],
+    "eva": "8000405"
+  },
+  {
+    "x": 5,
+    "y": 9,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 6,
+    "y": 9,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 9,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-light"
+    ]
+  },
+  {
+    "x": 8,
+    "y": 9,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-light"
+    ]
+  },
+  {
+    "x": 9,
+    "y": 9,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ]
+  },
+  {
+    "x": 0,
+    "y": 10,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 1,
+    "y": 10,
+    "type": "destination",
+    "text": "Obersdorf",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ],
+    "eva": "8000245"
+  },
+  {
+    "x": 2,
+    "y": 10,
+    "type": "destination",
+    "text": "Fussen",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ],
+    "eva": "8000145"
+  },
+  {
+    "x": 3,
+    "y": 10,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 4,
+    "y": 10,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 5,
+    "y": 10,
+    "type": "destination",
+    "text": "Mittenwald",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ],
+    "eva": "8000310"
+  },
+  {
+    "x": 6,
+    "y": 10,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 7,
+    "y": 10,
+    "type": "blank",
+    "text": "",
+    "highlighted": false,
+    "classes": [
+      "background-dark"
+    ]
+  },
+  {
+    "x": 8,
+    "y": 10,
+    "type": "destination",
+    "text": "Bayrischzell",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ],
+    "eva": "8000349"
+  },
+  {
+    "x": 9,
+    "y": 10,
+    "type": "destination",
+    "text": "Kufstein",
+    "highlighted": false,
+    "classes": [
+      "border-left",
+      "background-dark"
+    ],
+    "eva": "8000201"
+  }
+]
