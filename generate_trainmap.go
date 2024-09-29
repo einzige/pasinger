@@ -100,13 +100,13 @@ func main() {
         }
 
         .background-light {
-            background-color: #dfdfdf;
-            border-color: #dfdfdf;
+            background-color: #f0f0f0;
+            border-color: #f0f0f0;
         }
 
         .background-dark {
-            background-color: #cfcfcf;
-            border-color: #cfcfcf;
+            background-color: #ddd;
+            border-color: #ddd;
         }
 
         /* Borders */

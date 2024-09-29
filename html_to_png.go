@@ -1,20 +1,20 @@
 package main
 
 import (
-  "bytes"
-  "os"
+	"bytes"
 	"context"
 	"fmt"
+	"image"
+	"image/png"
 	"io/ioutil"
 	"log"
+	"os"
 	"path/filepath"
 	"time"
 
-  "image"
-	"image/png"
-
 	"github.com/chromedp/chromedp"
-  "github.com/nfnt/resize"
+	"github.com/disintegration/imaging"
+	"github.com/nfnt/resize"
 )
 
 func main() {
@@ -63,11 +63,18 @@ func main() {
 		chromedp.Screenshot(`#root`, &buf, chromedp.ByQuery),
 	})
 
-  // Decode the PNG image from the buffer
+	// Decode the PNG image from the buffer
 	img, _, err := image.Decode(bytes.NewReader(buf))
 	if err != nil {
 		log.Fatalf("Failed to decode screenshot: %v", err)
 	}
+
+	// Adjust brightness and contrast
+	brightnessFactor := -20.0  // Reduce brightness to 70%
+  contrastFactor := 40.0    // Increase contrast by 3x
+
+	img = imaging.AdjustBrightness(img, brightnessFactor)
+  img = imaging.AdjustContrast(img, contrastFactor)
 
 	// Get the original width and height of the image
 	origBounds := img.Bounds()
