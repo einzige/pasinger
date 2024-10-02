@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Map</title>
+    <style>
+        body {
+            font-family: Monospace;
+            background-color: #ddd;
+            overflow: hidden;
+            filter: brightness(0.7) contrast(3) grayscale(1);
+        }
+
+        #root {
+            width: 1200px;
+            height: 820px;
+            position: relative;
+        }
+
+        #logo {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 10000;
+          height: auto;
+          width: 100px;
+        }
+
+        table {
+            border-collapse: collapse !important;
+            width: 100%;
+            height: 429px;
+            position: relative;
+            z-index: 9999;
+        }
+
+        td {
+            height: 35px;
+            text-align: left;
+            vertical-align: bottom;
+            border: none;
+        }
+
+
+        .background-white {
+            background-color: white;
+            border-color: white;
+        }
+
+        .background-light {
+            background-color: #f0f0f0;
+            border-color: #f0f0f0;
+        }
+
+        .background-dark {
+            background-color: #ddd;
+            border-color: #ddd;
+        }
+
+
+        .border-left {
+            border-left: 2px solid black;
+        }
+
+        .border-bottom {
+            border-bottom: 2px solid black;
+        }
+
+        .note {
+          font-size: .8rem;
+          color: #aaa;
+        }
+
+
+        .destination {
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding-left: .25rem;
+        }
+
+        .destination::after {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background-color: black;
+            position: absolute;
+            bottom: -4px;
+            left: -4px;
+        }
+
+        .align-right .destination {
+            align-items: flex-end;
+            padding-right: .2rem;
+        }
+
+        .align-right .destination::after {
+            left: inherit;
+            right: -4px;
+        }
+
+        .destination.is-highlighted {
+            padding: 0;
+            margin: 0;
+            display: block;
+        }
+
+        .destination-text {
+            font-size: 1rem;
+        }
+
+        .destination.is-highlighted .destination-text {
+            font-weight: bold;
+            background: black;
+            color: white;
+            display: inline-block;
+            padding: .2rem .5rem;
+            font-size: 1.3rem;
+            border-radius: 0 20px 0 0;
+            padding-right: 2rem;
+        }
+
+        .destination-time {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .current-time {
+            font-size: .8rem;
+            color: #666;
+        }
+
+        .destination.is-highlighted .destination-time {
+            display: none;
+        }
+
+        .destination-departure,
+        .destination-arrival {
+            font-size: .8rem;
+            color: #555;
+        }
+
+        .destination-arrival {
+            margin-left: .2rem;
+            border: 1px dotted black;
+            color: black;
+            padding: .2rem;
+            border-radius: 5px;
+        }
+
+
+        .weather-img {
+            width: 1200px;
+            height: 820px;
+        }
+
+        .loader-img {
+            height: 311px;
+            width: 418px;
+            z-index: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <img class="weather-img" src="https://www.yr.no/en/content/2-2867714/meteogram.svg" />
+</div>
+</body>
+</html>
